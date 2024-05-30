@@ -9,7 +9,8 @@ namespace Csharpadvanced2024
     {
         public AutoMapperProfile()
         {
-            CreateMap<Location, LocationDTO>();
+            CreateMap<Location, LocationDTO>()
+                .ForMember(dest => dest.ImageUrls, opt => opt.MapFrom(src => src.Images.Select(img => img.Url).ToList())); ;
             CreateMap<Location, LocationDTOv2>();
             CreateMap<Location, SearchRequestDTO>()
                 .ForMember(dest => dest.Features, opt => opt.MapFrom(src => src.Features))
