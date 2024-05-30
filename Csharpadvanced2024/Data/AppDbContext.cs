@@ -22,6 +22,33 @@ namespace Csharpadvanced2024.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Landlord>().HasData
+               (
+                   new Landlord
+                   {
+                       Id = 1,
+                       FirstName = "John",
+                       LastName = "Doe",
+                       Age = 55,
+                   },
+
+                   new Landlord
+                   {
+                       Id = 2,
+                       FirstName = "Henk",
+                       LastName = "Pieters",
+                       Age = 40,
+                   },
+
+                   new Landlord
+                   {
+                       Id = 3,
+                       FirstName = "Jan",
+                       LastName = "Hollands",
+                       Age = 36,
+                   }
+               );
+
             modelBuilder.Entity<Location>().HasData
                 (
                     new Location
