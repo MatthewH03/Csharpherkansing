@@ -1,6 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-
-namespace Csharpadvanced2024.Models
+﻿namespace Csharpadvanced2024.Models
 {
     public class Location
     {
@@ -35,7 +33,8 @@ namespace Csharpadvanced2024.Models
         public ICollection<Image> Images { get; set; }
         public float PricePerDay { get; set; }
         public ICollection<Reservation> Reservations { get; set; }
-        public ICollection<Landlord> Landlord { get; set; }
+        public int? LandlordId { get; set; }
+        public Landlord Landlord { get; set; }
 
     }
 }

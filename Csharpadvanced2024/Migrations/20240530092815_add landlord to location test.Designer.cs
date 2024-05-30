@@ -4,6 +4,7 @@ using Csharpadvanced2024.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Csharpadvanced2024.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240530092815_add landlord to location test")]
+    partial class addlandlordtolocationtest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -94,23 +96,9 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 3,
-                            IsCover = false,
+                            IsCover = true,
                             LandlordId = 1,
                             Url = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            IsCover = false,
-                            LandlordId = 2,
-                            Url = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            IsCover = false,
-                            LandlordId = 3,
-                            Url = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         });
                 });
 
@@ -141,14 +129,14 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 1,
-                            Age = 40,
+                            Age = 55,
                             FirstName = "John",
                             LastName = "Doe"
                         },
                         new
                         {
                             Id = 2,
-                            Age = 33,
+                            Age = 40,
                             FirstName = "Henk",
                             LastName = "Pieters"
                         },
@@ -218,18 +206,6 @@ namespace Csharpadvanced2024.Migrations
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 1",
                             Type = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Dit is de tweede locatie",
-                            Features = 0,
-                            NumberOfGuests = 10,
-                            PricePerDay = 300f,
-                            Rooms = 5,
-                            Subtitle = "Mooie locatie",
-                            Title = "Locatie nr. 2",
-                            Type = 2
                         },
                         new
                         {

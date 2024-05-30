@@ -1,17 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
 using Csharpadvanced2024.Data;
 using Csharpadvanced2024.Models;
-using AutoMapper;
 using Csharpadvanced2024.Models.DTOs;
-using Csharpadvanced2024.Models.DTOs.v2;
-using Csharpadvanced2024.Services;
 using Csharpadvanced2024.Repositories;
+using Csharpadvanced2024.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Csharpadvanced2024.Controllers
@@ -96,7 +90,7 @@ namespace Csharpadvanced2024.Controllers
         public async Task<ActionResult<MaxPriceDTO>> GetMaxPrice(CancellationToken cancellationToken)
         {
             int maxPrice = await _locationRepo.GetMaxPriceAsync(cancellationToken);
-            var maxPriceDTO = new MaxPriceDTO { Price = maxPrice};
+            var maxPriceDTO = new MaxPriceDTO { Price = maxPrice };
             return Ok(maxPriceDTO);
         }
 
@@ -134,9 +128,9 @@ namespace Csharpadvanced2024.Controllers
         {
             var unavailableDates = await _locationRepo.GetUnavailableDatesAsync(locationId, cancellationToken);
             var unavailableDatesDTO = new UnavailableDateDTO
-              {
-                  UnavailableDates = unavailableDates
-              };
+            {
+                UnavailableDates = unavailableDates
+            };
             return Ok(unavailableDates);
         }
     }

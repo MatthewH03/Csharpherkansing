@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
 using Csharpadvanced2024.Data;
-using Csharpadvanced2024.Models.DTOs;
-using Csharpadvanced2024.Models;
 using Microsoft.AspNetCore.Mvc;
-using LocationDTOv2 = Csharpadvanced2024.Models.DTOs.v2.LocationDTOv2;
 using Microsoft.EntityFrameworkCore;
+using LocationDTOv2 = Csharpadvanced2024.Models.DTOs.v2.LocationDTOv2;
 
 namespace Csharpadvanced2024.Controllers.v2
 {

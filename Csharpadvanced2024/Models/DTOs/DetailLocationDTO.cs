@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace Csharpadvanced2024.Models.DTOs
+﻿namespace Csharpadvanced2024.Models.DTOs
 {
     public class DetailLocationDTO
     {

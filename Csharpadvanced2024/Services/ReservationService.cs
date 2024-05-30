@@ -1,10 +1,8 @@
-﻿using Csharpadvanced2024.Models.DTOs;
+﻿using Csharpadvanced2024.Data;
 using Csharpadvanced2024.Models;
+using Csharpadvanced2024.Models.DTOs;
 using Csharpadvanced2024.Repositories;
-using Microsoft.IdentityModel.Tokens;
-using Csharpadvanced2024.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Csharpadvanced2024.Services
 {
@@ -22,7 +20,7 @@ namespace Csharpadvanced2024.Services
             var unavailableDates = await _locationRepo.GetUnavailableDatesAsync(reservationRequestDTO.LocationId, cancellationToken);
             var location = await _locationRepo.GetDetailsLocationsAsync(reservationRequestDTO.LocationId, cancellationToken);
             var customer = await _context.Customers.FirstOrDefaultAsync(c => c.Email == reservationRequestDTO.Email, cancellationToken);
-            
+
             if (customer == null)
             {
                 if (string.IsNullOrWhiteSpace(reservationRequestDTO.Email))
@@ -37,7 +35,7 @@ namespace Csharpadvanced2024.Services
                     LastName = reservationRequestDTO.LastName
                 };
 
-               
+
 
                 _context.Customers.Add(customer);
                 await _context.SaveChangesAsync(cancellationToken);

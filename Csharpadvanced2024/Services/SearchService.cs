@@ -1,5 +1,5 @@
-﻿using Csharpadvanced2024.Models.DTOs;
-using Csharpadvanced2024.Models;
+﻿using Csharpadvanced2024.Models;
+using Csharpadvanced2024.Models.DTOs;
 using Csharpadvanced2024.Repositories;
 
 namespace Csharpadvanced2024.Services

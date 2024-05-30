@@ -1,18 +1,15 @@
 //Matthew Hiraki S1169167
 
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+using Csharpadvanced2024;
 using Csharpadvanced2024.Data;
-using System.Text.Json.Serialization;
+using Csharpadvanced2024.Repositories;
+using Csharpadvanced2024.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
-using Csharpadvanced2024;
-using Microsoft.AspNetCore.Mvc.Versioning;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using Csharpadvanced2024.Services;
-using Csharpadvanced2024.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);

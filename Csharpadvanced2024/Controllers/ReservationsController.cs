@@ -1,17 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
-using Csharpadvanced2024.Data;
-using Csharpadvanced2024.Models;
-using AutoMapper;
-using Csharpadvanced2024.Models.DTOs;
-using Csharpadvanced2024.Models.DTOs.v2;
+﻿using Csharpadvanced2024.Models.DTOs;
 using Csharpadvanced2024.Services;
-using Csharpadvanced2024.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Csharpadvanced2024.Controllers
 {

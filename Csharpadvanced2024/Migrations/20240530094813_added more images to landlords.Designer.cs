@@ -4,6 +4,7 @@ using Csharpadvanced2024.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Csharpadvanced2024.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240530094813_added more images to landlords")]
+    partial class addedmoreimagestolandlords
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -141,14 +143,14 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 1,
-                            Age = 40,
+                            Age = 55,
                             FirstName = "John",
                             LastName = "Doe"
                         },
                         new
                         {
                             Id = 2,
-                            Age = 33,
+                            Age = 40,
                             FirstName = "Henk",
                             LastName = "Pieters"
                         },

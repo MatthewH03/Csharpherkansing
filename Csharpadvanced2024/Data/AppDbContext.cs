@@ -1,11 +1,5 @@
 ﻿using Csharpadvanced2024.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Csharpadvanced2024.Data
 {
@@ -44,8 +38,24 @@ namespace Csharpadvanced2024.Data
                   {
                       Id = 3,
                       Url = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                      IsCover = true,
+                      IsCover = false,
                       LandlordId = 1
+                  },
+
+                  new Image
+                  {
+                      Id = 4,
+                      Url = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                      IsCover = false,
+                      LandlordId = 2
+                  },
+
+                  new Image
+                  {
+                      Id = 5,
+                      Url = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                      IsCover = false,
+                      LandlordId = 3
                   }
              );
 
@@ -56,7 +66,7 @@ namespace Csharpadvanced2024.Data
                        Id = 1,
                        FirstName = "John",
                        LastName = "Doe",
-                       Age = 55,
+                       Age = 40,
                    },
 
                    new Landlord
@@ -64,7 +74,7 @@ namespace Csharpadvanced2024.Data
                        Id = 2,
                        FirstName = "Henk",
                        LastName = "Pieters",
-                       Age = 40,
+                       Age = 33,
                    },
 
                    new Landlord
@@ -89,10 +99,24 @@ namespace Csharpadvanced2024.Data
                         PricePerDay = 300,
                         Type = (Location.LocationType)0,
                         Features = 0,
-                        Images = null,
-                        Landlord = null,
+                        LandlordId = 1,
                         Reservations = null
                     },
+
+                     new Location
+                     {
+                         Id = 2,
+                         Title = "Locatie nr. 2",
+                         Subtitle = "Mooie locatie",
+                         Description = "Dit is de tweede locatie",
+                         Rooms = 5,
+                         NumberOfGuests = 10,
+                         PricePerDay = 300,
+                         Type = (Location.LocationType)2,
+                         Features = 0,
+                         LandlordId = null,
+                         Reservations = null
+                     },
 
                     new Location
                     {
@@ -105,12 +129,12 @@ namespace Csharpadvanced2024.Data
                         PricePerDay = 300,
                         Type = (Location.LocationType)1,
                         Features = 0,
-                        Images = null,
-                        Landlord = null,
+                        LandlordId = null,
                         Reservations = null
                     },
 
-                    new Location {
+                    new Location
+                    {
                         Id = 4,
                         Title = "Frankie's Penthouse",
                         Subtitle = "Te gek uitzicht",
@@ -120,11 +144,10 @@ namespace Csharpadvanced2024.Data
                         PricePerDay = 400,
                         Type = (Location.LocationType)0,
                         Features = 0,
-                        Images = null,
-                        Landlord = null,
+                        LandlordId = null,
                         Reservations = null
                     }
-                ) ; 
+                );
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
