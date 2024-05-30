@@ -184,6 +184,22 @@ namespace Csharpadvanced2024.Data
                       Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg",
                       IsCover = true,
                       LocationId = 3
+                  },
+
+                  new Image
+                  {
+                      Id = 22,
+                      Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg",
+                      IsCover = true,
+                      LocationId = 2
+                  },
+
+                  new Image
+                  {
+                      Id = 23,
+                      Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg",
+                      IsCover = true,
+                      LocationId = 2
                   }
              );
 
@@ -224,9 +240,9 @@ namespace Csharpadvanced2024.Data
                         Description = "Dit is de eerste locatie",
                         Rooms = 5,
                         NumberOfGuests = 10,
-                        PricePerDay = 300,
-                        Type = (Location.LocationType)1,
-                        Features = 0,
+                        PricePerDay = 100,
+                        Type = Location.LocationType.Appartment,
+                        Features = Location.FeaturesEnum.Smoking,
                         LandlordId = 1,
                         Reservations = null
                     },
@@ -240,8 +256,8 @@ namespace Csharpadvanced2024.Data
                          Rooms = 5,
                          NumberOfGuests = 10,
                          PricePerDay = 300,
-                         Type = (Location.LocationType)2,
-                         Features = 0,
+                         Type = Location.LocationType.Cottage,
+                         Features = Location.FeaturesEnum.PetsAllowed,
                          LandlordId = 2,
                          Reservations = null
                      },
@@ -284,9 +300,9 @@ namespace Csharpadvanced2024.Data
                         Description = "Dit is de vijfde locatie",
                         Rooms = 3,
                         NumberOfGuests = 5,
-                        PricePerDay = 400,
-                        Type = (Location.LocationType)3,
-                        Features = 0,
+                        PricePerDay = 200,
+                        Type = Location.LocationType.Chalet,
+                        Features = Location.FeaturesEnum.Wifi,
                         LandlordId = 3,
                         Reservations = null
                     },
@@ -300,8 +316,8 @@ namespace Csharpadvanced2024.Data
                         Rooms = 6,
                         NumberOfGuests = 6,
                         PricePerDay = 400,
-                        Type = (Location.LocationType)4,
-                        Features = 0,
+                        Type = Location.LocationType.Hotel,
+                        Features = Location.FeaturesEnum.TV,
                         LandlordId = 1,
                         Reservations = null
                     },
@@ -314,9 +330,9 @@ namespace Csharpadvanced2024.Data
                         Description = "Dit is de zevende locatie",
                         Rooms = 7,
                         NumberOfGuests = 7,
-                        PricePerDay = 400,
-                        Type = (Location.LocationType)5,
-                        Features = 0,
+                        PricePerDay = 100,
+                        Type = Location.LocationType.House,
+                        Features = Location.FeaturesEnum.Bath,
                         LandlordId = 2,
                         Reservations = null
                     },
@@ -329,9 +345,9 @@ namespace Csharpadvanced2024.Data
                         Description = "Dit is de achtste locatie",
                         Rooms = 8,
                         NumberOfGuests = 8,
-                        PricePerDay = 400,
-                        Type = (Location.LocationType)5,
-                        Features = 0,
+                        PricePerDay = 300,
+                        Type = Location.LocationType.Appartment,
+                        Features = Location.FeaturesEnum.Breakfast,
                         LandlordId = 3,
                         Reservations = null
                     },
@@ -344,9 +360,9 @@ namespace Csharpadvanced2024.Data
                         Description = "Dit is de negenste locatie",
                         Rooms = 9,
                         NumberOfGuests = 9,
-                        PricePerDay = 400,
-                        Type = (Location.LocationType)0,
-                        Features = 0,
+                        PricePerDay = 200,
+                        Type = Location.LocationType.Appartment,
+                        Features = Location.FeaturesEnum.PetsAllowed,
                         LandlordId = 1,
                         Reservations = null
                     },
@@ -360,8 +376,8 @@ namespace Csharpadvanced2024.Data
                         Rooms = 3,
                         NumberOfGuests = 10,
                         PricePerDay = 400,
-                        Type = (Location.LocationType)1,
-                        Features = 0,
+                        Type = Location.LocationType.Cottage,
+                        Features = Location.FeaturesEnum.Wifi,
                         LandlordId = null,
                         Reservations = null
                     }

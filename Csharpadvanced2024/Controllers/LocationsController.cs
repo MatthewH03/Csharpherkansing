@@ -71,10 +71,10 @@ namespace Csharpadvanced2024.Controllers
         [Route("Search")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<IEnumerable<LocationDTO>>> Search(SearchRequestDTO searchRequestDTO, CancellationToken cancellationToken)
+        public async Task<ActionResult<IEnumerable<LocationDTO>>> Search([FromBody] SearchRequestDTO searchRequestDTO, CancellationToken cancellationToken)
         {
             var locations = await _searchService.SearchLocationsAsync(searchRequestDTO, cancellationToken);
-            var locationDTOs = _mapper.Map<List<SearchRequestDTO>>(locations);
+            var locationDTOs = _mapper.Map<List<LocationDTO>>(locations);
             return Ok(locationDTOs);
 
         }
@@ -131,7 +131,7 @@ namespace Csharpadvanced2024.Controllers
             {
                 UnavailableDates = unavailableDates
             };
-            return Ok(unavailableDates);
+            return Ok(unavailableDates.ToList());
         }
     }
 }

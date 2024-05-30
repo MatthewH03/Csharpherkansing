@@ -4,6 +4,7 @@ using Csharpadvanced2024.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Csharpadvanced2024.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240530114550_added features for testing")]
+    partial class addedfeaturesfortesting
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -223,20 +225,6 @@ namespace Csharpadvanced2024.Migrations
                             IsCover = true,
                             LocationId = 3,
                             Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            IsCover = true,
-                            LocationId = 2,
-                            Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            IsCover = true,
-                            LocationId = 2,
-                            Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg"
                         });
                 });
 
@@ -343,7 +331,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 5,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 1",
-                            Type = 0
+                            Type = 1
                         },
                         new
                         {
@@ -356,7 +344,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 5,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 2",
-                            Type = 1
+                            Type = 2
                         },
                         new
                         {
@@ -386,20 +374,20 @@ namespace Csharpadvanced2024.Migrations
                         {
                             Id = 5,
                             Description = "Dit is de vijfde locatie",
-                            Features = 4,
+                            Features = 3,
                             LandlordId = 3,
                             NumberOfGuests = 5,
                             PricePerDay = 200f,
                             Rooms = 3,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 5",
-                            Type = 2
+                            Type = 3
                         },
                         new
                         {
                             Id = 6,
                             Description = "Dit is de zesde locatie",
-                            Features = 8,
+                            Features = 4,
                             LandlordId = 1,
                             NumberOfGuests = 6,
                             PricePerDay = 400f,
@@ -412,7 +400,7 @@ namespace Csharpadvanced2024.Migrations
                         {
                             Id = 7,
                             Description = "Dit is de zevende locatie",
-                            Features = 16,
+                            Features = 5,
                             LandlordId = 2,
                             NumberOfGuests = 7,
                             PricePerDay = 100f,
@@ -425,20 +413,20 @@ namespace Csharpadvanced2024.Migrations
                         {
                             Id = 8,
                             Description = "Dit is de achtste locatie",
-                            Features = 32,
+                            Features = 6,
                             LandlordId = 3,
                             NumberOfGuests = 8,
                             PricePerDay = 300f,
                             Rooms = 8,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 8",
-                            Type = 0
+                            Type = 5
                         },
                         new
                         {
                             Id = 9,
                             Description = "Dit is de negenste locatie",
-                            Features = 2,
+                            Features = 1,
                             LandlordId = 1,
                             NumberOfGuests = 9,
                             PricePerDay = 200f,
@@ -451,7 +439,7 @@ namespace Csharpadvanced2024.Migrations
                         {
                             Id = 10,
                             Description = "Dit is de tiende locatie",
-                            Features = 4,
+                            Features = 2,
                             NumberOfGuests = 10,
                             PricePerDay = 400f,
                             Rooms = 3,
