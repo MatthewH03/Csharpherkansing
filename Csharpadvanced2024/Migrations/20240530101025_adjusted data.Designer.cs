@@ -4,6 +4,7 @@ using Csharpadvanced2024.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Csharpadvanced2024.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240530101025_adjusted data")]
+    partial class adjusteddata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -329,7 +331,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 5,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 1",
-                            Type = 1
+                            Type = 0
                         },
                         new
                         {
@@ -379,7 +381,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 3,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 5",
-                            Type = 3
+                            Type = 0
                         },
                         new
                         {
@@ -392,7 +394,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 6,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 6",
-                            Type = 4
+                            Type = 0
                         },
                         new
                         {
@@ -405,7 +407,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 7,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 7",
-                            Type = 5
+                            Type = 0
                         },
                         new
                         {
@@ -418,7 +420,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 8,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 8",
-                            Type = 5
+                            Type = 0
                         },
                         new
                         {
@@ -443,7 +445,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 3,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 10",
-                            Type = 1
+                            Type = 0
                         });
                 });
 

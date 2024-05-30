@@ -4,6 +4,7 @@ using Csharpadvanced2024.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Csharpadvanced2024.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240530100306_more seeding")]
+    partial class moreseeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,7 +97,7 @@ namespace Csharpadvanced2024.Migrations
                         {
                             Id = 3,
                             IsCover = false,
-                            LandlordId = 1,
+                            LandlordId = 2,
                             Url = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         },
                         new
@@ -136,7 +138,7 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 9,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 5,
                             Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Edificio_de_la_Asociaci%C3%B3n_de_Skippers%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_88.jpg/1920px-Edificio_de_la_Asociaci%C3%B3n_de_Skippers%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_88.jpg"
                         },
@@ -150,7 +152,7 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 11,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 6,
                             Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Edificio_de_la_Asociaci%C3%B3n_de_Skippers%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_88.jpg/1920px-Edificio_de_la_Asociaci%C3%B3n_de_Skippers%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_88.jpg"
                         },
@@ -164,64 +166,57 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 13,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 7,
                             Url = "https://commons.wikimedia.org/wiki/Category:Quality_images_of_%C3%85lesund#/media/File:Escuela_Asp%C3%B8y,_%C3%85lesund,_Noruega,_2019-09-01,_DD_79.jpg"
                         },
                         new
                         {
                             Id = 14,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 7,
                             Url = "https://commons.wikimedia.org/wiki/Category:Quality_images_of_%C3%85lesund#/media/File:Escuela_Asp%C3%B8y,_%C3%85lesund,_Noruega,_2019-09-01,_DD_80.jpg"
                         },
                         new
                         {
                             Id = 15,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 8,
                             Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Escuela_secundaria_Latinskolen%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_87.jpg/1280px-Escuela_secundaria_Latinskolen%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_87.jpg"
                         },
                         new
                         {
                             Id = 16,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 8,
                             Url = "https://commons.wikimedia.org/wiki/Category:Quality_images_of_%C3%85lesund#/media/File:Iglesia_parroquial,_%C3%85lesund,_Noruega,_2019-09-01,_DD_77.jpg"
                         },
                         new
                         {
                             Id = 17,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 9,
                             Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Iglesia_parroquial%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_86.jpg/1280px-Iglesia_parroquial%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_86.jpg"
                         },
                         new
                         {
                             Id = 18,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 9,
                             Url = "https://commons.wikimedia.org/wiki/Category:Quality_images_of_%C3%85lesund#/media/File:Nav%C3%ADo_Costa_Pacifica_desde_Aksla,_%C3%85lesund,_Noruega,_2019-09-01,_DD_04.jpg"
                         },
                         new
                         {
                             Id = 19,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 10,
                             Url = "https://commons.wikimedia.org/wiki/Category:Quality_images_of_%C3%85lesund#/media/File:Nav%C3%ADo_Costa_Pacifica_desde_Aksla,_%C3%85lesund,_Noruega,_2019-09-01,_DD_04.jpg"
                         },
                         new
                         {
                             Id = 20,
-                            IsCover = true,
+                            IsCover = false,
                             LocationId = 10,
-                            Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            IsCover = true,
-                            LocationId = 3,
                             Url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg/1920px-Puerto%2C_%C3%85lesund%2C_Noruega%2C_2019-09-01%2C_DD_36-40_PAN.jpg"
                         });
                 });
@@ -329,7 +324,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 5,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 1",
-                            Type = 1
+                            Type = 0
                         },
                         new
                         {
@@ -379,7 +374,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 3,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 5",
-                            Type = 3
+                            Type = 0
                         },
                         new
                         {
@@ -392,7 +387,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 6,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 6",
-                            Type = 4
+                            Type = 0
                         },
                         new
                         {
@@ -405,7 +400,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 7,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 7",
-                            Type = 5
+                            Type = 0
                         },
                         new
                         {
@@ -418,7 +413,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 8,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 8",
-                            Type = 5
+                            Type = 0
                         },
                         new
                         {
@@ -443,7 +438,7 @@ namespace Csharpadvanced2024.Migrations
                             Rooms = 3,
                             Subtitle = "Mooie locatie",
                             Title = "Locatie nr. 10",
-                            Type = 1
+                            Type = 0
                         });
                 });
 
