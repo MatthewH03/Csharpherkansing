@@ -36,7 +36,7 @@ namespace Csharpadvanced2024.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<IEnumerable<LandlordDTO>>> GetLandlords(CancellationToken cancellationToken)
         {
-            var landlords = await _context.Landlords.ToListAsync(cancellationToken);
+            var landlords = await _context.Landlords.Include(landlords => landlords.Avatar).ToListAsync(cancellationToken);
             var landlordDTOs = _mapper.Map<List<LandlordDTO>>(landlords);
             return Ok(landlordDTOs);
 

@@ -19,7 +19,8 @@ namespace Csharpadvanced2024
                 .ForMember(dest => dest.MinPrice, opt => opt.Ignore())
                 .ForMember(dest => dest.MaxPrice, opt => opt.Ignore());
             CreateMap<Location, DetailLocationDTO>();
-            CreateMap<Landlord, LandlordDTO>();
+            CreateMap<Landlord, LandlordDTO>()
+                .ForMember(dest => dest.AvatarUrl, opt => opt.MapFrom(src => src.Avatar.Select(img => img.Url).ToList())); ; ;
         }
     }
 }
