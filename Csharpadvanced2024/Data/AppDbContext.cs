@@ -235,32 +235,32 @@ namespace Csharpadvanced2024.Data
                     new Location
                     {
                         Id = 1,
-                        Title = "Locatie nr. 1",
-                        Subtitle = "Mooie locatie",
-                        Description = "Dit is de eerste locatie",
-                        Rooms = 5,
-                        NumberOfGuests = 10,
-                        PricePerDay = 100,
-                        Type = Location.LocationType.Appartment,
-                        Features = Location.FeaturesEnum.Smoking,
+                        Title = "Rustiek Berg Huisje",
+                        Subtitle = "Rustig toevluchtsoord",
+                        Description = "Genesteld in de bergen, biedt dit gezellige huisje een adembenemend uitzicht en een rustige sfeer. Perfect voor een weekendje weg.",
+                        Rooms = 3,
+                        NumberOfGuests = 6,
+                        PricePerDay = 150,
+                        Type = (Location.LocationType)1,
+                        Features = (Location.FeaturesEnum.Wifi | Location.FeaturesEnum.Breakfast),
                         LandlordId = 1,
                         Reservations = null
                     },
 
-                     new Location
-                     {
-                         Id = 2,
-                         Title = "Locatie nr. 2",
-                         Subtitle = "Mooie locatie",
-                         Description = "Dit is de tweede locatie",
-                         Rooms = 5,
-                         NumberOfGuests = 10,
-                         PricePerDay = 300,
-                         Type = Location.LocationType.Cottage,
-                         Features = Location.FeaturesEnum.PetsAllowed,
-                         LandlordId = 2,
-                         Reservations = null
-                     },
+                    new Location
+                    {
+                        Id = 2,
+                        Title = "Modern Stadsappartement",
+                        Subtitle = "In het hart van het centrum",
+                        Description = "Een stijlvol en modern appartement gelegen in het bruisende stadscentrum. Dicht bij alle belangrijke bezienswaardigheden en openbaar vervoer.",
+                        Rooms = 2,
+                        NumberOfGuests = 2,
+                        PricePerDay = 200,
+                        Type = (Location.LocationType)0,
+                        Features = (Location.FeaturesEnum.Wifi | Location.FeaturesEnum.TV),
+                        LandlordId = 2,
+                        Reservations = null
+                    },
 
                     new Location
                     {
@@ -295,14 +295,14 @@ namespace Csharpadvanced2024.Data
                     new Location
                     {
                         Id = 5,
-                        Title = "Locatie nr. 5",
-                        Subtitle = "Mooie locatie",
-                        Description = "Dit is de vijfde locatie",
-                        Rooms = 3,
-                        NumberOfGuests = 5,
-                        PricePerDay = 200,
-                        Type = Location.LocationType.Chalet,
-                        Features = Location.FeaturesEnum.Wifi,
+                        Title = "Hotel aan het Strand",
+                        Subtitle = "Luxe hotelverblijf met zeezicht",
+                        Description = "Ervaar luxe in dit hotel aan het strand met een heerlijk bad en een adembenemend uitzicht op de oceaan. Perfect voor families en groepen.",
+                        Rooms = 10,
+                        NumberOfGuests = 8,
+                        PricePerDay = 400,
+                        Type = (Location.LocationType)4,
+                        Features = (Location.FeaturesEnum.Wifi | Location.FeaturesEnum.Bath | Location.FeaturesEnum.Breakfast | Location.FeaturesEnum.TV),
                         LandlordId = 3,
                         Reservations = null
                     },
@@ -310,14 +310,14 @@ namespace Csharpadvanced2024.Data
                     new Location
                     {
                         Id = 6,
-                        Title = "Locatie nr. 6",
-                        Subtitle = "Mooie locatie",
-                        Description = "Dit is de zesde locatie",
-                        Rooms = 6,
-                        NumberOfGuests = 6,
-                        PricePerDay = 400,
-                        Type = Location.LocationType.Hotel,
-                        Features = Location.FeaturesEnum.TV,
+                        Title = "Gezellig Landelijk Huisje",
+                        Subtitle = "Charmant en rustig",
+                        Description = "Een charmant huisje op het platteland, omgeven door groen. Ideaal voor een rustige vakantie met familie of vrienden.",
+                        Rooms = 2,
+                        NumberOfGuests = 5,
+                        PricePerDay = 120,
+                        Type = (Location.LocationType)1,
+                        Features = 0,
                         LandlordId = 1,
                         Reservations = null
                     },
@@ -325,14 +325,14 @@ namespace Csharpadvanced2024.Data
                     new Location
                     {
                         Id = 7,
-                        Title = "Locatie nr. 7",
-                        Subtitle = "Mooie locatie",
-                        Description = "Dit is de zevende locatie",
+                        Title = "Historisch Huis",
+                        Subtitle = "Elegant en historisch",
+                        Description = "Verblijf in een prachtig bewaard gebleven historisch huis met antieke meubels en moderne voorzieningen.",
                         Rooms = 7,
-                        NumberOfGuests = 7,
-                        PricePerDay = 100,
-                        Type = Location.LocationType.House,
-                        Features = Location.FeaturesEnum.Bath,
+                        NumberOfGuests = 15,
+                        PricePerDay = 400,
+                        Type = (Location.LocationType)5,
+                        Features = (Location.FeaturesEnum.Wifi | Location.FeaturesEnum.Bath | Location.FeaturesEnum.TV | Location.FeaturesEnum.Smoking),
                         LandlordId = 2,
                         Reservations = null
                     },
@@ -340,14 +340,14 @@ namespace Csharpadvanced2024.Data
                     new Location
                     {
                         Id = 8,
-                        Title = "Locatie nr. 8",
-                        Subtitle = "Mooie locatie",
-                        Description = "Dit is de achtste locatie",
-                        Rooms = 8,
-                        NumberOfGuests = 8,
-                        PricePerDay = 300,
-                        Type = Location.LocationType.Appartment,
-                        Features = Location.FeaturesEnum.Breakfast,
+                        Title = "Stads Kamer",
+                        Subtitle = "Stijlvol wonen in het centrum",
+                        Description = "Een stijlvolle kamer in het hart van de stad, met gemakkelijke toegang tot het nachtleven, eetgelegenheden en winkels.",
+                        Rooms = 1,
+                        NumberOfGuests = 2,
+                        PricePerDay = 250,
+                        Type = (Location.LocationType)3,
+                        Features = (Location.FeaturesEnum.Wifi),
                         LandlordId = 3,
                         Reservations = null
                     },
@@ -355,14 +355,14 @@ namespace Csharpadvanced2024.Data
                     new Location
                     {
                         Id = 9,
-                        Title = "Locatie nr. 9",
-                        Subtitle = "Mooie locatie",
-                        Description = "Dit is de negenste locatie",
-                        Rooms = 9,
-                        NumberOfGuests = 9,
-                        PricePerDay = 200,
-                        Type = Location.LocationType.Appartment,
-                        Features = Location.FeaturesEnum.PetsAllowed,
+                        Title = "Chalet aan het Meer",
+                        Subtitle = "Ontspannen bij het water",
+                        Description = "Een rustig chalet aan het meer, perfect voor vissen, kajakken en genieten van de natuur.",
+                        Rooms = 2,
+                        NumberOfGuests = 4,
+                        PricePerDay = 180,
+                        Type = (Location.LocationType)2,
+                        Features = (Location.FeaturesEnum.Wifi | Location.FeaturesEnum.Smoking),
                         LandlordId = 1,
                         Reservations = null
                     },
@@ -370,15 +370,15 @@ namespace Csharpadvanced2024.Data
                     new Location
                     {
                         Id = 10,
-                        Title = "Locatie nr. 10",
-                        Subtitle = "Mooie locatie",
-                        Description = "Dit is de tiende locatie",
-                        Rooms = 3,
-                        NumberOfGuests = 10,
-                        PricePerDay = 400,
-                        Type = Location.LocationType.Cottage,
-                        Features = Location.FeaturesEnum.Wifi,
-                        LandlordId = null,
+                        Title = "Grand Central Hotel",
+                        Subtitle = "Luxueus verblijf in het hart van de stad",
+                        Description = "Het Grand Central Hotel biedt een perfecte combinatie van luxe en comfort. Gelegen in het hart van de stad, op loopafstand van de belangrijkste bezienswaardigheden, restaurants en winkels.",
+                        Rooms = 10,
+                        NumberOfGuests = 300,
+                        PricePerDay = 150,
+                        Type = (Location.LocationType)4,
+                        Features = (Location.FeaturesEnum.Wifi | Location.FeaturesEnum.Breakfast),
+                        LandlordId = 1,
                         Reservations = null
                     }
                 );

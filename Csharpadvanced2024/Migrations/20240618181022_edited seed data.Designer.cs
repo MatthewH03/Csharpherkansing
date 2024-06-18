@@ -4,6 +4,7 @@ using Csharpadvanced2024.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Csharpadvanced2024.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240618181022_edited seed data")]
+    partial class editedseeddata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -335,27 +337,27 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Genesteld in de bergen, biedt dit gezellige huisje een adembenemend uitzicht en een rustige sfeer. Perfect voor een weekendje weg.",
+                            Description = "Nestled in the mountains, this cozy cottage offers stunning views and a peaceful atmosphere. Perfect for a weekend getaway.",
                             Features = 36,
                             LandlordId = 1,
                             NumberOfGuests = 6,
                             PricePerDay = 150f,
                             Rooms = 3,
-                            Subtitle = "Rustig toevluchtsoord",
-                            Title = "Rustiek Berg Huisje",
+                            Subtitle = "Peaceful retreat",
+                            Title = "Rustic Mountain Cottage",
                             Type = 1
                         },
                         new
                         {
                             Id = 2,
-                            Description = "Een stijlvol en modern appartement gelegen in het bruisende stadscentrum. Dicht bij alle belangrijke bezienswaardigheden en openbaar vervoer.",
+                            Description = "A stylish and modern apartment located in the bustling city center. Close to all major attractions and public transport.",
                             Features = 12,
                             LandlordId = 2,
                             NumberOfGuests = 2,
                             PricePerDay = 200f,
-                            Rooms = 2,
-                            Subtitle = "In het hart van het centrum",
-                            Title = "Modern Stadsappartement",
+                            Rooms = 1,
+                            Subtitle = "In the heart of downtown",
+                            Title = "Modern City Apartment",
                             Type = 0
                         },
                         new
@@ -385,66 +387,66 @@ namespace Csharpadvanced2024.Migrations
                         new
                         {
                             Id = 5,
-                            Description = "Ervaar luxe in dit hotel aan het strand met een heerlijk bad en een adembenemend uitzicht op de oceaan. Perfect voor families en groepen.",
+                            Description = "Experience luxury at this beachfront hotel with a nice bath and stunning ocean views. Perfect for families and groups.",
                             Features = 60,
                             LandlordId = 3,
                             NumberOfGuests = 8,
                             PricePerDay = 400f,
-                            Rooms = 10,
-                            Subtitle = "Luxe hotelverblijf met zeezicht",
-                            Title = "Hotel aan het Strand",
+                            Rooms = 100,
+                            Subtitle = "Luxurious hotel stay with ocean view",
+                            Title = "Beachfront Hotel",
                             Type = 4
                         },
                         new
                         {
                             Id = 6,
-                            Description = "Een charmant huisje op het platteland, omgeven door groen. Ideaal voor een rustige vakantie met familie of vrienden.",
+                            Description = "A charming country cottage surrounded by greenery. Ideal for a quiet retreat with family or friends.",
                             Features = 0,
                             LandlordId = 1,
                             NumberOfGuests = 5,
                             PricePerDay = 120f,
                             Rooms = 2,
-                            Subtitle = "Charmant en rustig",
-                            Title = "Gezellig Landelijk Huisje",
+                            Subtitle = "Charming and quiet",
+                            Title = "Cozy Country Cottage",
                             Type = 1
                         },
                         new
                         {
                             Id = 7,
-                            Description = "Verblijf in een prachtig bewaard gebleven historisch huis met antieke meubels en moderne voorzieningen.",
+                            Description = "Stay in a beautifully preserved historic house with antique furnishings and modern amenities.",
                             Features = 29,
                             LandlordId = 2,
                             NumberOfGuests = 15,
                             PricePerDay = 400f,
                             Rooms = 7,
-                            Subtitle = "Elegant en historisch",
-                            Title = "Historisch Huis",
+                            Subtitle = "Elegance and history",
+                            Title = "Historic House",
                             Type = 5
                         },
                         new
                         {
                             Id = 8,
-                            Description = "Een stijlvolle kamer in het hart van de stad, met gemakkelijke toegang tot het nachtleven, eetgelegenheden en winkels.",
+                            Description = "A stylish room in the heart of the city, with easy access to nightlife, dining, and shopping.",
                             Features = 4,
                             LandlordId = 3,
                             NumberOfGuests = 2,
                             PricePerDay = 250f,
                             Rooms = 1,
-                            Subtitle = "Stijlvol wonen in het centrum",
-                            Title = "Stads Kamer",
+                            Subtitle = "Stylish downtown living",
+                            Title = "City Room",
                             Type = 3
                         },
                         new
                         {
                             Id = 9,
-                            Description = "Een rustig chalet aan het meer, perfect voor vissen, kajakken en genieten van de natuur.",
+                            Description = "A peaceful chalet by the lake, perfect for fishing, kayaking, and enjoying nature.",
                             Features = 5,
                             LandlordId = 1,
                             NumberOfGuests = 4,
                             PricePerDay = 180f,
                             Rooms = 2,
-                            Subtitle = "Ontspannen bij het water",
-                            Title = "Chalet aan het Meer",
+                            Subtitle = "Relax by the water",
+                            Title = "Lakeside Chalet",
                             Type = 2
                         },
                         new
@@ -455,7 +457,7 @@ namespace Csharpadvanced2024.Migrations
                             LandlordId = 1,
                             NumberOfGuests = 300,
                             PricePerDay = 150f,
-                            Rooms = 10,
+                            Rooms = 150,
                             Subtitle = "Luxueus verblijf in het hart van de stad",
                             Title = "Grand Central Hotel",
                             Type = 4
